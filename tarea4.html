@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+<title> Tarea 4</title>
+
+</head>
+<body>
+<script type="text/javascript">
+
+	/*Se declaran las variables con las que se van a realizar los procesos*/
+var numero_1= parseInt(prompt("ingrese el primer valor:"));
+var numero_2= parseInt(prompt("ingrese el segundo valor:"));
+
+	/*Eventualmente tambien se declara otra variable para el resultado*/
+var resultado; 
+
+/*Se inicia un ciclo for para que el switch case pueda ser recorrido con los 5 casos*/
+for (var i=1; i <=5;i++)
+{
+switch (i){
+
+	/*Caso 1: La suma de los dos valores ingresados*/
+case 1: 
+ resultado= numero_1 + numero_2
+        alert( "suma:"+ resultado);
+		
+	break;
+
+	/*Caso 2: Resta de los dos valores ingresados*/
+	case 2: 
+	resultado= numero_1 - numero_2
+
+alert("resta:"+ resultado);	
+	break;
+
+	/*Caso 3: Multiplicacion de los dos valores ingresados*/
+case 3:
+ resultado= numero_1 * numero_2
+ 	alert( "multiplicacion:" + resultado);
+	
+	break;
+
+	/*Caso 4: Division de los dos valores numericos ingresados*/
+	case 4:
+	
+	resultado= numero_1/ numero_2;
+	 alert("division:"+resultado);
+	 
+	 break;
+
+	 /*Caso 5: Residuo de los valores ingresados*/
+	 case 5: 
+	 resultado= (numero_1 * numero_2) / 100;
+	
+	 alert ("mod:"+ resultado);
+}
+}
+</script>
+</body>
+</html>
+
+
+
+
